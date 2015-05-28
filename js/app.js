@@ -31,6 +31,6 @@ Calci = {
 };
 $(document).ready(function() {
   $('.key').click(function(event) {
-    handleKeyPress(this);
+    Calci.handleKeyPress(this);
   });
 });
