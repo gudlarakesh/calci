@@ -1,5 +1,4 @@
-
-Calci = {
+Calci={
   clear: function() {
     $('#preview').html("");
     $('#result').html("0");    
@@ -11,8 +10,8 @@ Calci = {
   calculateResult: function() {
     $('#result').html(eval($('#preview').html()));
   },
-  handleKeyPress: function(key) {
-    switch($(key).text()) {
+  handleInput: function(val) {
+    switch(val) {
     case "AC":
       Calci.clear();
       break;
@@ -24,13 +23,29 @@ Calci = {
       break;
     default:
       $('#preview').html(
-        $('#preview').html() + $(key).text()
+        $('#preview').html() + val
       );
+    }
+  },
+
+  watchKeyClick: function() {
+    $('.key').click(function(event){
+      Calci.handleInput($(this).text());
+    });
+  },
+  handleInputFunctionWrapper: function(val) {
+    return function() {
+      Calci.handleInput(val);
+    }
+  },
+  watchKeyPress: function() {
+    var keys = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', '+', '-', '*', '/', "%" , "&#177"];
+    for(var i = 0; i < keys.length; i++) {
+      $(document).bind('keyup', keys[i], Calci.handleInputFunctionWrapper(keys[i]));
     }
   }
 };
 $(document).ready(function() {
-  $('.key').click(function(event) {
-    Calci.handleKeyPress(this);
-  });
+  Calci.watchKeyClick();
+  Calci.watchKeyPress();
 });
