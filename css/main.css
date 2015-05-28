@@ -27,17 +27,12 @@ html body {
   #calculator .key {
     padding: 0;
     height: 12vmin;
-    width: 12vmin;
     background-color: #E26A6A;
     box-sizing: border-box;
     text-align: center;
     line-height: 12vmin;
-    font-size: 3vmin; }
-  #calculator .key#equals {
-    width: 24vmin; }
-  #calculator .key#plus {
-    height: 24vmin;
-    line-height: 24vmin; }
+    font-size: 3vmin;
+    border: 0.5px solid white; }
   #calculator .key:hover {
     background-color: #F1A9A0; }
   #calculator .key:active {
