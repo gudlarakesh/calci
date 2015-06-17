@@ -14,7 +14,7 @@ html body {
 #calculator {
   width: 48vmin;
   height: 84vmin;
-  // background-color: #EB9532;
+  background-color: red;
   color: #ecf0f1; 
  #result {
   background-color: #323232;
@@ -36,15 +36,16 @@ html body {
     color: #19B5FE;
     font-weight: 300;
  }
+ 
  .key {
   padding: 0;
   height: 12vmin;
-  background-color: #4c4c4c;
+  background-color: #7f7f7f;
   box-sizing: border-box;
   text-align: center;
   line-height: 12vmin;
   font-size: 3vmin; 
-  border: 0.5px solid white;
+  border: 1px solid #b2b2b2;
  }
  #key-DIVISION,#key-MULTIPLY,#key-MINUS,#key-PLUS,#key-EQL{
    color: #19B5FE;
@@ -53,15 +54,16 @@ html body {
    color: #EB9532;
  }
 
- // #key-EQL{
- //   height:23vmin;
- //   line-height: 24vmin;
- // }
- &:hover {
-  background-color: #19B5FE;
+ #key-EQL{
+   height:24.1vmin;
+   line-height: 24vmin;
  }
- &:active, &.active {
-  background-color: darken(#19B5FE, 5%);
+ 
+ .key &:hover {
+  background-color: white;
+ }
+ .key &:active, &.active {
+  background-color: darken(#191919, 5%);
  }
  .key-group {
   padding: 0; 

@@ -28,8 +28,8 @@ Calci = {
     if (val == 'X') {
       val = '*';
     }
-    if(val == '&divide;'){
-      val= '/';
+    if (val == '&divide;'){
+      val = '/';
     }
 
     switch(val) {

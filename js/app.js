@@ -20,7 +20,8 @@ Calci = {
     $('#preview').html(preview.slice(0, preview.length-1));
   },
   calculateResult: function() {
-    var result = eval($('#preview').html()) + '';
+    
+    var result = eval($('#preview').html().replace('÷', '/')) + '';
     $('#result').html(result);
     $('#preview').html(result);
   },
@@ -28,10 +29,6 @@ Calci = {
     if (val == 'X') {
       val = '*';
     }
-    if(val == '&divide;'){
-      val= '/';
-    }
-
     switch(val) {
     case Calci.constants.ac:
       Calci.clearDisplay();

@@ -11,6 +11,7 @@ html body {
 #calculator {
   width: 48vmin;
   height: 84vmin;
+  background-color: red;
   color: #ecf0f1; }
   #calculator #result {
     background-color: #323232;
@@ -33,20 +34,23 @@ html body {
   #calculator .key {
     padding: 0;
     height: 12vmin;
-    background-color: #4c4c4c;
+    background-color: #7f7f7f;
     box-sizing: border-box;
     text-align: center;
     line-height: 12vmin;
     font-size: 3vmin;
-    border: 0.5px solid white; }
+    border: 1px solid #b2b2b2; }
   #calculator #key-DIVISION, #calculator #key-MULTIPLY, #calculator #key-MINUS, #calculator #key-PLUS, #calculator #key-EQL {
     color: #19B5FE; }
   #calculator #key-AC, #calculator #key-DEL {
     color: #EB9532; }
-  #calculator:hover {
-    background-color: #19B5FE; }
-  #calculator:active, #calculator.active {
-    background-color: #01acfc; }
+  #calculator #key-EQL {
+    height: 24.1vmin;
+    line-height: 24vmin; }
+  .key #calculator:hover {
+    background-color: white; }
+  .key #calculator:active, #calculator.active {
+    background-color: #0c0c0c; }
   #calculator .key-group {
     padding: 0; }
 
