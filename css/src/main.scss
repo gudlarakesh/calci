@@ -1,0 +1,77 @@
+.vcenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 
+}
+
+
+body {
+  height: 100vh; 
+  font-family:'Roboto Slab', serif;
+  font-weight: 400;
+  background-image: url("../images/math .jpg");
+}
+
+#calculator {
+  width: 48vmin;
+  height: 84vmin;
+  color: #ecf0f1; 
+ #result {
+  background-color: #323232;
+  height: 19vmin;
+  text-align: right;
+  line-height: 19vmin;
+  font-size: 8vmin;
+  padding: 0 2vmin;
+  color: #19B5FE;
+  font-weight: 100; 
+ }
+ #preview {
+    background-color: #323232;
+    height: 8vmin;
+    text-align: right;
+    line-height: 8vmin;
+    font-size: 3vmin;
+    padding: 0 2vmin; 
+    color: #19B5FE;
+    font-weight: 300;
+ }
+ 
+ .key {
+  padding: 0;
+  height: 12vmin;
+  background-color: #7f7f7f;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 12vmin;
+  font-size: 3vmin; 
+  border: 1px solid #b2b2b2;
+  &:hover {
+  background-color: #b2b2b2;
+ }
+ &:active, &.active {
+  background-color: darken(gray, 5%);
+ }
+ }
+ #key-DIVISION,#key-MULTIPLY,#key-MINUS,#key-PLUS,#key-EQL{
+   color:#19B5FE;
+   background-color: #191919;
+   &:hover{
+     background-color: #b2b2b2;
+   }
+ }
+ #key-AC,#key-DEL{
+   color: #EB9532;
+   background-color: #4c4c4c;
+ }
+
+ #key-EQL{
+   height:24.1vmin;
+   line-height: 24vmin;
+ }
+ 
+ 
+ .key-group {
+  padding: 0; 
+ }
+}
