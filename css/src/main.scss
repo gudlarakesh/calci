@@ -5,16 +5,16 @@
 }
 
 
-html body {
+body {
   height: 100vh; 
   font-family:'Roboto Slab', serif;
   font-weight: 400;
+  background-image: url("../images/math .jpg");
 }
 
 #calculator {
   width: 48vmin;
   height: 84vmin;
-  background-color: red;
   color: #ecf0f1; 
  #result {
   background-color: #323232;
@@ -46,12 +46,23 @@ html body {
   line-height: 12vmin;
   font-size: 3vmin; 
   border: 1px solid #b2b2b2;
+  &:hover {
+  background-color: #b2b2b2;
+ }
+ &:active, &.active {
+  background-color: darken(gray, 5%);
+ }
  }
  #key-DIVISION,#key-MULTIPLY,#key-MINUS,#key-PLUS,#key-EQL{
-   color: #19B5FE;
+   color:#19B5FE;
+   background-color: #191919;
+   &:hover{
+     background-color: #b2b2b2;
+   }
  }
  #key-AC,#key-DEL{
    color: #EB9532;
+   background-color: #4c4c4c;
  }
 
  #key-EQL{
@@ -59,12 +70,7 @@ html body {
    line-height: 24vmin;
  }
  
- .key &:hover {
-  background-color: white;
- }
- .key &:active, &.active {
-  background-color: darken(#191919, 5%);
- }
+ 
  .key-group {
   padding: 0; 
  }

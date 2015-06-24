@@ -3,15 +3,15 @@
   top: 50%;
   transform: translateY(-50%); }
 
-html body {
+body {
   height: 100vh;
   font-family: 'Roboto Slab', serif;
-  font-weight: 400; }
+  font-weight: 400;
+  background-image: url("../images/math .jpg"); }
 
 #calculator {
   width: 48vmin;
   height: 84vmin;
-  background-color: red;
   color: #ecf0f1; }
   #calculator #result {
     background-color: #323232;
@@ -40,17 +40,22 @@ html body {
     line-height: 12vmin;
     font-size: 3vmin;
     border: 1px solid #b2b2b2; }
+    #calculator .key:hover {
+      background-color: #b2b2b2; }
+    #calculator .key:active, #calculator .key.active {
+      background-color: #737373;
+      border-radius: 50px; }
   #calculator #key-DIVISION, #calculator #key-MULTIPLY, #calculator #key-MINUS, #calculator #key-PLUS, #calculator #key-EQL {
-    color: #19B5FE; }
+    color: #19B5FE;
+    background-color: #191919; }
+    #calculator #key-DIVISION:hover, #calculator #key-MULTIPLY:hover, #calculator #key-MINUS:hover, #calculator #key-PLUS:hover, #calculator #key-EQL:hover {
+      background-color: #b2b2b2; }
   #calculator #key-AC, #calculator #key-DEL {
-    color: #EB9532; }
+    color: #EB9532;
+    background-color: #4c4c4c; }
   #calculator #key-EQL {
     height: 24.1vmin;
     line-height: 24vmin; }
-  .key #calculator:hover {
-    background-color: white; }
-  .key #calculator:active, #calculator.active {
-    background-color: #0c0c0c; }
   #calculator .key-group {
     padding: 0; }
 
